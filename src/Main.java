@@ -54,7 +54,7 @@ public class Main {
         for (int i = 1; i <= 12; i++) {
             deposit += monthlyDeposit;
             double interest = deposit * (interestRate / 12);
-            deposit += interest;
+            deposit += (int) interest;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
         }
 
